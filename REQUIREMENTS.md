@@ -1,10 +1,10 @@
-## Requirements
+##Requirements
 
 The requirements below are broken into step-by-step instructions, which model the way we **recommend you approach the project**.
 
-### Get all candies in the goodie bag
+###Get all candies in the goodie bag
 
-#### Backend
+####Backend
 
 - [ ] Write a `candies` model with the following information:
   - [ ] name - not empty or null
@@ -13,7 +13,7 @@ The requirements below are broken into step-by-step instructions, which model th
   - [ ] imageUrl - with a default value
 - [ ] Write a route to serve up all candies
 
-#### Frontend
+####Frontend
 - [ ] Write a candies sub-reducer to manage candies in your Redux store
 - [ ] Write a component to display a list of all candies
 - [ ] Display the all-candies component when the url matches `/candies`
@@ -21,7 +21,7 @@ The requirements below are broken into step-by-step instructions, which model th
 
 Remember to commit early and often as you're working!
 
-### Extra
+###Extra
 
 If you finish the above 'get all candies' functionality, feel free to branch out and add some more functionality! Here's some suggestions:
 
