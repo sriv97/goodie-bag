@@ -1,21 +1,33 @@
 const Sequelize = require('sequelize');
 const db = require('../database');
 
-module.exports = db.define('candy', {
+const Candy = db.define('candy', {
   name: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+    },
   },
-  description:{
-    type: Sequelize.STRING,
-    allowNull: false
+  description: {
+    type: Sequelize.TEXT,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+    },
   },
   quantity: {
     type: Sequelize.INTEGER,
     validate: {
+      min: 0,
       max: 10
-    }},
+    },
+  },
   imageUrl: {
-    type: Sequelize.TEXT,
-    defaultValue: '../public/bg.jpg'
-}});
+    type: Sequelize.STRING,
+    defaultValue:
+      'https://images.freeimages.com/images/large-previews/11b/candy-1326928.jpg',
+  },
+});
+
+module.exports = Candy;

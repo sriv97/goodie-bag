@@ -34,7 +34,7 @@ const seed = async () => {
     db.close()
   }
   catch (err) {
-    console.error(red('Oh noes! Something went wrong!'))
+    console.error(red('Oh no! Something went wrong!'))
     console.error(err)
     db.close()
   }
